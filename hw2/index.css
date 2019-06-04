@@ -1,0 +1,141 @@
+.jumbotron {
+    color: #e3c4a8;
+    background-color: #4592af;
+    border-color: #33313b;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 50px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: aliceblue;
+    padding-top: 25px;
+    color: aliceblue;
+}
+
+body {
+    background-color: #e3c4a8;
+}
+
+.name {
+    font-size: 14px;
+    font-family: "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+    color: #212121;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.price {
+    color: #ff6709;
+    font-family: "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.image {
+    width: 160px;
+    height: 160px;
+    margin-top: 0px;
+    margin-bottom: 22px;
+    margin-left: 37px;
+    margin-right: 37px;
+}
+
+.item {
+    height: 300px;
+    position: relative;
+    border: none;
+    background: #fff;
+    text-align: center;
+    background-clip: border-box;
+    background-image: none;
+    background-origin: padding-box;
+    margin-bottom: 20px;
+    margin-left: 14px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-top: 34px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    cursor: pointer;
+}
+
+.item:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+    transform: translate3d(-5px, -5px, 0);
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: linear;
+    background: #9ea9f0;
+}
+
+.page-link {
+    cursor: pointer;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #71a0a5;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #4592af;
+    border-color: #4592af;
+}
+
+#top_button {
+    z-index: 99;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    outline: none;
+    transition: 0.5s;
+}
+
+.top_button::before,
+.top_button::after {
+    content: "";
+    background-color: #ffffff;
+    display: block;
+    width: 13px;
+    height: 2px;
+    position: absolute;
+    animation: ease-in-out jump 1s both infinite;
+}
+
+.top_button::before {
+    left: 21%;
+    transform: rotate(-45deg);
+}
+
+.top_button::after {
+    right: 20%;
+    transform: rotate(45deg);
+}
+
+@keyframes jump {
+    0% {
+        top: 35%;
+    }
+    50% {
+        top: 60%;
+    }
+    100% {
+        top: 35%;
+    }
+}
